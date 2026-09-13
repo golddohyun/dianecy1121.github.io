@@ -30,7 +30,7 @@ strong,b{font-weight:900}
 .titleRow{display:flex;gap:14px;align-items:center;justify-content:space-between}
 .headerActions{display:flex;align-items:center;gap:7px;flex-shrink:0}
 #btnBuild{font-size:13px;padding:9px 11px;box-shadow:0 3px 15px #27364a08}
-.langToggle{display:inline-flex;border:1px solid #cdd4db;border-radius:9px;overflow:hidden;background:#fff}.langToggle button{border:0;border-radius:0;padding:8px 10px;font-size:12px;letter-spacing:.5px;color:#586473}.langToggle button+button{border-left:1px solid #cdd4db}.langToggle button[aria-pressed="true"]{background:#263e52;color:#fff}
+.langToggle{display:inline-flex;border:1px solid #cdd4db;border-radius:9px;overflow:hidden;background:#fff}.langToggle button{border:0;border-radius:0;padding:8px 10px;font-size:12px;letter-spacing:.5px;color:#586473}.langToggle button+button{border-left:1px solid #cdd4db}.langToggle button[aria-pressed="true"]{background:#263e52;color:#fff}html[lang=en] .filterChip{font-size:13px;padding:7px 6px}
 #repro{font-size:12px;border-radius:30px;background:#eef5f0;border-color:#bdd4c3;color:#28593a;white-space:nowrap}
 .reproWrap{position:relative}
 .popover{display:none;position:absolute;right:0;top:calc(100% + 9px);width:345px;max-width:70vw;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 40px #1f29372b;padding:16px;font-size:14px;font-weight:700;z-index:40}
@@ -254,7 +254,7 @@ const STR={ko:{
 },en:{
  title:'Object Explorer e6',eyebrow:'UNITREE G1 LAB · PHOTO → DIGITAL TWIN',h1:'Lab Digital Twin e6 (v8.4.1) - Object Explorer',btnBuild:'How this room was built',repro:'Reproducibility',reproNone:'No reproducibility record yet.',reproNone2:'No reproducibility record',
  roomAria:'3D lab room',canvasAria:'Lab you can rotate with the mouse and pick objects in',summaryAria:'Room summary',toolsAria:'Find objects',classesAria:'Object class filter',listAria:'Visible object list',cardAria:'Selected object',
- toolTitle:'Find an object',toolHint:'click to select',ftObj:'Objects',ftShell:'Walls & floor',ftRobot:'Robots',ftCeil:'Ceiling & lights',searchPh:'Search name, class, source',listHeading:'Object list',count:n=>String(n),
+ toolTitle:'Find an object',toolHint:'click to select',ftObj:'Objects',ftShell:'Walls/floor',ftRobot:'Robots',ftCeil:'Ceiling/lights',searchPh:'Search name, class, source',listHeading:'Object list',count:n=>String(n),
  emptyList:'No matching object.<br>Change the search or the filters.',statusInit:'loaded 0/0 · preparing',axisNote:'Z ↑ · units m<br>Room seen with the ceiling opened',gesture:'<b>Drag</b> rotate · <b>Wheel</b> zoom<br><b>Right / Shift + drag</b> pan',reset:'↺ Whole room',resetTitle:'Return to the initial view that shows the whole room.',
  buildEyebrow:'From photos to room · build record',closeBuild:'Close ✕',closeBuildAria:'Close the build record',cardKicker:'Selected object',
  sObjects:n=>`<b>${n}</b> objects`,sMass:m=>`Total mass <b>${m}</b> kg`,sFree:n=>`<b>${n}</b> free rigid bodies`,sJoints:(a,b)=>`<b>${a}</b> joints (+ <b>${b}</b> robot joints)`,sPads:n=>`<b>${n}</b> wall pads`,sGates:(a,b)=>`Gates passed <b>${a}/${b}</b>`,
